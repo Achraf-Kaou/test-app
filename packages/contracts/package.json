@@ -1,0 +1,48 @@
+{
+	"name": "@packages/contracts",
+	"version": "0.1.0",
+	"description": "Intervention Solution Contracts module",
+	"author": {
+		"name": "ccns"
+	},
+	"repository": {
+		"type": "git",
+		"url": "",
+		"directory": "packages/contracts"
+	},
+	"license": "AGPL-3.0",
+	"private": true,
+	"type": "commonjs",
+	"main": "./dist/index.js",
+	"typings": "./dist/index.d.ts",
+	"scripts": {
+		"build": "tsc -p tsconfig.lib.json",
+		"watch": "tsc -p tsconfig.lib.json --watch"
+	},
+	"dependencies": {
+		"@packages/constants": "^0.1.0",
+		"tslib": "^2.6.2"
+	},
+	"devDependencies": {
+		"@types/node": "^20.14.9",
+		"typescript": "^5.8.3"
+	},
+	"keywords": [
+		"nestjs",
+		"typescript",
+		"contracts",
+		"shared-module",
+		"common-module",
+		"intervention-solution",
+		"platform",
+		"open-source",
+		"enterprise",
+		"agpl",
+		"nx"
+	],
+	"engines": {
+		"node": ">=20.18.1",
+		"yarn": ">=1.22.19"
+	},
+	"sideEffects": false
+}

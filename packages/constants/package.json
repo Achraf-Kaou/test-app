@@ -1,0 +1,38 @@
+{
+	"name": "@packages/constants",
+	"version": "0.1.0",
+	"description": "",
+	"author": {
+		"name": "ccns"
+	},
+	"repository": {
+		"type": "git",
+		"url": "",
+		"directory": "packages/constants"
+	},
+	"homepage": "",
+	"license": "AGPL-3.0",
+	"private": true,
+	"type": "commonjs",
+	"main": "./dist/index.ts",
+	"typings": "./dist/index.d.ts",
+	"scripts": {
+		"build": "tsc -p tsconfig.lib.json",
+		"watch": "tsc -p tsconfig.lib.json --watch"
+	},
+	"dependencies": {
+		"tslib": "^2.6.2"
+	},
+	"devDependencies": {
+		"@types/node": "^20.14.9",
+		"rimraf": "^6.0.1",
+		"typescript": "^5.9.2",
+		"undici-types": "^7.15.0"
+	},
+	"keywords": [],
+	"engines": {
+		"node": ">=20.18.1",
+		"yarn": ">=1.22.19"
+	},
+	"sideEffects": false
+}
