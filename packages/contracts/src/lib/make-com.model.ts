@@ -1,4 +1,4 @@
-import { IBasePerTenantAndOrganizationEntityModel } from '@packages/contracts';
+import { IBasePerTenantAndOrganizationEntityModel } from './base-entity.model';
 
 export type GrantType = 'authorization_code' | 'refresh_token';
 

@@ -1,5 +1,5 @@
-import { IBasePerTenantAndOrganizationEntityModel, ITimeLog } from '@packages/contracts';
-
+import { ITimeLog } from './timesheet.model';
+import { IBasePerTenantAndOrganizationEntityModel } from './base-entity.model';
 export type ZapierGrantType = 'authorization_code' | 'refresh_token';
 export type ActionType = 'start' | 'stop';
 

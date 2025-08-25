@@ -1,0 +1,63 @@
+{
+  "name": "@packages/common",
+  "version": "0.1.0",
+  "description": "Solution Intervention",
+  "author": {
+    "name": "ccns"
+  },
+  "repository": {
+    "type": "git",
+    "url": "<url>",
+    "directory": "packages/common"
+  },
+  "homepage": "",
+  "license": "AGPL-3.0",
+  "private": true,
+  "type": "commonjs",
+  "main": "./dist/src/index.js",
+  "typings": "./dist/src/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.lib.json",
+    "watch": "tsc -p tsconfig.lib.json --watch"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.11.3",
+    "@mikro-orm/nestjs": "^6.1.1",
+    "@nestjs/common": "^11.1.0",
+    "@nestjs/core": "^11.1.0",
+    "@nestjs/typeorm": "^11.0.0",
+    "@packages/constants": "^0.1.0",
+    "@packages/contracts": "^0.1.0",
+    "graphql": "^16.11.0",
+    "tslib": "^2.6.2",
+    "typeorm": "^0.3.24"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "nest-knexjs": "^0.0.28",
+    "rimraf": "^3.0.2",
+    "typescript": "^5.8.3"
+  },
+  "keywords": [
+    "nestjs",
+    "common-module",
+    "shared-module",
+    "intervention-solution",
+    "platform",
+    "typescript",
+    "graphql",
+    "nestjs-common",
+    "nestjs-core",
+    "mikro-orm",
+    "typeorm",
+    "apollo-server",
+    "open-source",
+    "enterprise",
+    "agpl"
+  ],
+  "engines": {
+    "node": ">=20.18.1",
+    "yarn": ">=1.22.19"
+  },
+  "sideEffects": false
+}
