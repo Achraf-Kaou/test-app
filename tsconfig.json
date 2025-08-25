@@ -1,34 +1,29 @@
 /* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
 /* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
 {
-  "compileOnSave": false,
   "compilerOptions": {
-    "strict": true,
-    "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "skipLibCheck": true,
-    "isolatedModules": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "target": "ES2022",
-    "module": "preserve"
-  },
-  "angularCompilerOptions": {
-    "enableI18nLegacyMessageIdFormat": false,
-    "strictInjectionParameters": true,
-    "strictInputAccessModifiers": true,
-    "typeCheckHostBindings": true,
-    "strictTemplates": true
-  },
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
+    "outDir": "./dist/out-tsc",
+    "resolveJsonModule": true,
+    "typeRoots": ["node_modules/@types"],
+    "paths": {
+      "@angular/*": ["./node_modules/@angular/*"],
+      "@packages/common": ["./packages/common/src/index.ts"],
+      "@packages/constants": ["./packages/constants/src/index.ts"],
+			"@packages/contracts": ["./packages/contracts/src/index.ts"],
+      "@packages/ui-auth": ["./packages/ui-auth/src/index.ts"],
+			"@packages/ui-config": ["./packages/ui-config/src/index.ts"],
+			"@packages/ui-core": ["./packages/ui-core/src/index.ts"],
+			"@packages/ui-core/*": ["./packages/ui-core/*/src/index.ts"],
+      "@nebular/*": ["./node_modules/@nebular/*"],
+			"ng2-completer": ["./node_modules/@akveo/ng2-completer"],
+			"ngx-daterangepicker-material/*": ["./node_modules/ngx-daterangepicker-material/*"]
     },
-    {
-      "path": "./tsconfig.spec.json"
-    }
-  ]
+    "preserveConstEnums": true,
+		"allowSyntheticDefaultImports": true,
+		"noUnusedLocals": false,
+		"noImplicitAny": false,
+		"esModuleInterop": false,
+		"useDefineForClassFields": false
+    },
+	"extends": "./tsconfig.base.json"
 }

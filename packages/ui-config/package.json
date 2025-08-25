@@ -1,0 +1,43 @@
+{
+	"name": "@packages/ui-config",
+	"version": "0.1.0",
+	"description": "A configuration library for the intervention solution framework, providing environment settings and configurations to be shared across various Angular applications within the Gauzy ecosystem.",
+	"author": {
+		"name": "ccns"
+	},
+	"repository": {
+		"type": "git",
+		"url": "",
+		"directory": "packages/ui-config"
+	},
+	"homepage": "",
+	"license": "AGPL-3.0",
+	"private": true,
+	"scripts": {
+		"build": "ng-packagr -p ng-package.json"
+	},
+	"peerDependencies": {
+		"@angular/common": "^19.2.0",
+		"@angular/core": "^19.2.0"
+	},
+	"dependencies": {
+		"tslib": "^2.6.2"
+	},
+	"devDependencies": {
+		"@types/node": "^20.14.9",
+		"cross-env": "^7.0.3"
+	},
+	"keywords": [
+		"intervention solution",
+		"angular",
+		"configuration",
+		"environment",
+		"settings",
+		"library"
+	],
+	"engines": {
+		"node": ">=20.18.1",
+		"yarn": ">=1.22.19"
+	},
+	"sideEffects": false
+}

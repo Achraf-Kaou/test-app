@@ -1,5 +1,5 @@
 /**
- * Public API Surface of @gauzy/contracts
+ * Public API Surface of @packages/contracts
  */
 export * from './lib/accounting-template.model';
 /** App Setting Model */

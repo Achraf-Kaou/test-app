@@ -1,15 +1,9 @@
 {
 	"extends": "./tsconfig.json",
 	"compilerOptions": {
-		"baseUrl": ".",
-		"paths": {
-			"@packages/constants": ["packages/constants/src/index.ts"],
-			"@packages/contracts": ["packages/contracts/src/index.ts"],
-			"@packages/common": ["packages/common/src/index.ts"]
-		},
-		"outDir": "./dist",
+		"outDir": "../../dist/out-tsc",
 		"declaration": true,
-		"types": ["node", "undici-types"],
+		"types": ["node"],
 		"target": "es2021",
 		"strictNullChecks": false,
 		"noImplicitAny": false,
@@ -17,6 +11,6 @@
 		"forceConsistentCasingInFileNames": true,
 		"noFallthroughCasesInSwitch": false
 	},
-	"include": ["src"],
-	"exclude": ["dist", "node_modules"]
+	"include": ["src/**/*.ts"],
+	"exclude": ["src/**/*.spec.ts", "src/**/*.test.ts"]
 }
